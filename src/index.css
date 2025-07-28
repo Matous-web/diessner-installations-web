@@ -2,39 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Instalace Diessner Design System - světlé barvy s modrou a šedou kombinací */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 98%;
+    --foreground: 210 15% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 15% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 15% 20%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 220 85% 45%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 20% 85%;
+    --secondary-foreground: 210 15% 20%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 20% 92%;
+    --muted-foreground: 210 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 220 85% 45%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 210 20% 88%;
+    --input: 210 20% 88%;
+    --ring: 220 85% 45%;
+
+    /* Instalatérské barvy */
+    --installer-blue: 220 85% 45%;
+    --installer-blue-light: 220 85% 85%;
+    --installer-blue-dark: 220 85% 35%;
+    --installer-gray: 210 15% 35%;
+    --installer-gray-light: 210 15% 90%;
+    --installer-gray-medium: 210 15% 60%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(220 85% 45%), hsl(220 85% 55%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 85% 45% / 0.9), hsl(220 85% 35% / 0.9));
+    --gradient-section: linear-gradient(180deg, hsl(0 0% 98%), hsl(210 20% 96%));
+
+    /* Shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(220 85% 45% / 0.1);
+    --shadow-card: 0 4px 20px -4px hsl(220 85% 45% / 0.15);
+    --shadow-button: 0 4px 12px -2px hsl(220 85% 45% / 0.3);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --radius: 0.5rem;
 

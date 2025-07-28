@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'barlow': ['Barlow Semi Condensed', 'sans-serif'],
+				'sans': ['Open Sans', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,7 +65,28 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				installer: {
+					blue: 'hsl(var(--installer-blue))',
+					'blue-light': 'hsl(var(--installer-blue-light))',
+					'blue-dark': 'hsl(var(--installer-blue-dark))',
+					gray: 'hsl(var(--installer-gray))',
+					'gray-light': 'hsl(var(--installer-gray-light))',
+					'gray-medium': 'hsl(var(--installer-gray-medium))'
 				}
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-section': 'var(--gradient-section)'
+			},
+			boxShadow: {
+				'elegant': 'var(--shadow-elegant)',
+				'card': 'var(--shadow-card)',
+				'button': 'var(--shadow-button)'
+			},
+			transitionProperty: {
+				'smooth': 'var(--transition-smooth)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

@@ -1,0 +1,232 @@
+import { Card } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import { Label } from '@/components/ui/label';
+import { MapPin, Phone, Mail, Globe, Facebook, Instagram } from 'lucide-react';
+import { useState } from 'react';
+import { useToast } from '@/hooks/use-toast';
+
+const ContactSection = () => {
+  const { toast } = useToast();
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Here you would typically send the form data to your backend
+    toast({
+      title: "Zpráva odeslána",
+      description: "Děkujeme za vaši zprávu. Ozveme se vám co nejdříve.",
+    });
+    setFormData({ name: '', email: '', phone: '', message: '' });
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  return (
+    <section id="contact" className="py-20 bg-gradient-section">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-barlow font-bold text-foreground mb-6">
+            Kontakt
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Máte zájem o naše služby nebo potřebujete konzultaci? 
+            Neváhejte nás kontaktovat. Rádi vám pomůžeme s vaším projektem.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* Contact Information */}
+          <div className="space-y-8">
+            <Card className="p-6 shadow-card border-border bg-card">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
+                  <span className="text-primary-foreground font-barlow font-bold text-lg">ID</span>
+                </div>
+                <h3 className="text-xl font-barlow font-semibold text-foreground">
+                  Instalace Diessner
+                </h3>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <MapPin className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
+                  <div>
+                    <p className="font-medium text-foreground">Adresa kanceláře:</p>
+                    <p className="text-muted-foreground">Rumburk - Rumburk 1<br />Severní 1656/33<br />40801</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-center space-x-3">
+                  <Phone className="w-5 h-5 text-primary flex-shrink-0" />
+                  <div>
+                    <p className="font-medium text-foreground">Telefon:</p>
+                    <a href="tel:+420123456789" className="text-primary hover:text-primary/80">
+                      +420 123 456 789
+                    </a>
+                  </div>
+                </div>
+                
+                <div className="flex items-center space-x-3">
+                  <Mail className="w-5 h-5 text-primary flex-shrink-0" />
+                  <div>
+                    <p className="font-medium text-foreground">Email:</p>
+                    <a href="mailto:info@instalacediessner.cz" className="text-primary hover:text-primary/80">
+                      info@instalacediessner.cz
+                    </a>
+                  </div>
+                </div>
+                
+                <div className="flex items-center space-x-3">
+                  <Globe className="w-5 h-5 text-primary flex-shrink-0" />
+                  <div>
+                    <p className="font-medium text-foreground">Web:</p>
+                    <a href="https://instalacediessner.cz" className="text-primary hover:text-primary/80">
+                      www.instalacediessner.cz
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Social Media */}
+              <div className="mt-6 pt-6 border-t border-border">
+                <p className="font-medium text-foreground mb-3">Sledujte nás:</p>
+                <div className="flex space-x-4">
+                  <a href="#" className="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-primary/80 transition-colors">
+                    <Facebook className="w-5 h-5 text-primary-foreground" />
+                  </a>
+                  <a href="#" className="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-primary/80 transition-colors">
+                    <Instagram className="w-5 h-5 text-primary-foreground" />
+                  </a>
+                </div>
+              </div>
+            </Card>
+
+            {/* Company Details */}
+            <Card className="p-6 shadow-card border-border bg-card">
+              <h3 className="text-lg font-barlow font-semibold text-foreground mb-4">
+                Firemní údaje
+              </h3>
+              <div className="space-y-2 text-sm">
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">IČO:</span>
+                  <span className="text-foreground">87761815</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">DIČ:</span>
+                  <span className="text-foreground">CZ87761815</span>
+                </div>
+                <div className="mt-4 pt-4 border-t border-border">
+                  <p className="text-muted-foreground font-medium mb-2">Fakturační adresa:</p>
+                  <p className="text-foreground text-sm">
+                    Instalace Diessner<br />
+                    Severní 1656/33<br />
+                    408 01 Rumburk 1
+                  </p>
+                </div>
+              </div>
+            </Card>
+          </div>
+
+          {/* Contact Form and Map */}
+          <div className="space-y-8">
+            <Card className="p-6 shadow-card border-border bg-card">
+              <h3 className="text-xl font-barlow font-semibold text-foreground mb-6">
+                Kontaktní formulář
+              </h3>
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div>
+                  <Label htmlFor="name">Jméno a příjmení *</Label>
+                  <Input
+                    id="name"
+                    name="name"
+                    type="text"
+                    required
+                    value={formData.name}
+                    onChange={handleInputChange}
+                    className="mt-1"
+                  />
+                </div>
+                
+                <div>
+                  <Label htmlFor="email">Email *</Label>
+                  <Input
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    className="mt-1"
+                  />
+                </div>
+                
+                <div>
+                  <Label htmlFor="phone">Telefon</Label>
+                  <Input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                    className="mt-1"
+                  />
+                </div>
+                
+                <div>
+                  <Label htmlFor="message">Zpráva *</Label>
+                  <Textarea
+                    id="message"
+                    name="message"
+                    required
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    className="mt-1"
+                    rows={5}
+                    placeholder="Popište nám váš projekt nebo požadavek..."
+                  />
+                </div>
+                
+                <Button 
+                  type="submit" 
+                  className="w-full bg-gradient-primary hover:bg-installer-blue-dark shadow-button"
+                >
+                  Odeslat zprávu
+                </Button>
+              </form>
+            </Card>
+
+            {/* Google Maps */}
+            <Card className="overflow-hidden shadow-card border-border">
+              <div className="h-64 bg-muted">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.123456789!2d14.556567!3d50.898123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470978d123456789%3A0x123456789abcdef!2sSevern%C3%AD%201656%2F33%2C%20408%2001%20Rumburk!5e0!3m2!1sen!2scz!4v1234567890123"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Mapa - Instalace Diessner"
+                ></iframe>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ContactSection;
