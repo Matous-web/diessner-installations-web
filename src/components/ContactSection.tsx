@@ -64,7 +64,7 @@ const ContactSection = () => {
                   <MapPin className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-medium text-foreground">Adresa kanceláře:</p>
-                    <p className="text-muted-foreground">Sídlo společnosti</p>
+                    <p className="text-muted-foreground">Okrouhlo 229<br />254 01</p>
                   </div>
                 </div>
                 
@@ -72,8 +72,8 @@ const ContactSection = () => {
                   <Phone className="w-5 h-5 text-primary flex-shrink-0" />
                   <div>
                     <p className="font-medium text-foreground">Telefon:</p>
-                    <a href="tel:+420XXXXXXXXX" className="text-primary hover:text-primary/80">
-                      +420 XXX XXX XXX
+                    <a href="tel:+420723385545" className="text-primary hover:text-primary/80">
+                      +420 723 385 545
                     </a>
                   </div>
                 </div>
@@ -82,8 +82,8 @@ const ContactSection = () => {
                   <Mail className="w-5 h-5 text-primary flex-shrink-0" />
                   <div>
                     <p className="font-medium text-foreground">Email:</p>
-                    <a href="mailto:info@filpastav.cz" className="text-primary hover:text-primary/80">
-                      info@filpastav.cz
+                    <a href="mailto:petr.hrubant@seznam.cz" className="text-primary hover:text-primary/80">
+                      petr.hrubant@seznam.cz
                     </a>
                   </div>
                 </div>
@@ -131,8 +131,8 @@ const ContactSection = () => {
                   <p className="text-muted-foreground font-medium mb-2">Fakturační adresa:</p>
                   <p className="text-foreground text-sm">
                     Filpastav s.r.o.<br />
-                    Adresa sídla<br />
-                    PSČ Město
+                    Okrouhlo 229<br />
+                    254 01
                   </p>
                 </div>
               </div>

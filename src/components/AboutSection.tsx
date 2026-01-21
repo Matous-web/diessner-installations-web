@@ -1,3 +1,5 @@
+import aboutImage from '@/assets/about-construction.jpg';
+
 const AboutSection = () => {
   return (
     <section id="about" className="py-20 bg-gradient-section">
@@ -61,8 +63,8 @@ const AboutSection = () => {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-card">
               <img 
-                src="/lovable-uploads/046ec4d0-0d58-46d4-b58c-a4a1b1931159.png" 
-                alt="Stavební práce" 
+                src={aboutImage} 
+                alt="Dokončený stavební projekt" 
                 className="w-full h-96 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
