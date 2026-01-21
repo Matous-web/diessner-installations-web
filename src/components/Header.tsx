@@ -20,7 +20,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <h1 className="text-xl font-barlow font-bold text-primary">
-              Instalace Diessner
+              Filpastav s.r.o.
             </h1>
           </div>
 

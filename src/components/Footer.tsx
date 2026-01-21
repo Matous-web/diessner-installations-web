@@ -7,10 +7,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-barlow font-bold mb-4">Instalace Diessner</h3>
+            <h3 className="text-xl font-barlow font-bold mb-4">Filpastav s.r.o.</h3>
             <p className="text-white/80 mb-4 leading-relaxed">
-              Profesionální instalatérské služby pro váš domov i firmu. 
-              Kvalita, spolehlivost a dlouholeté zkušenosti.
+              Profesionální stavební práce a autodoprava. 
+              Kvalita, spolehlivost a individuální přístup.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors">
@@ -40,20 +40,20 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-white/60" />
-                <a href="tel:+420123456789" className="text-white/80 hover:text-white transition-colors">
-                  +420 123 456 789
+                <a href="tel:+420XXXXXXXXX" className="text-white/80 hover:text-white transition-colors">
+                  +420 XXX XXX XXX
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-white/60" />
-                <a href="mailto:info@instalacediessner.cz" className="text-white/80 hover:text-white transition-colors">
-                  info@instalacediessner.cz
+                <a href="mailto:info@filpastav.cz" className="text-white/80 hover:text-white transition-colors">
+                  info@filpastav.cz
                 </a>
               </div>
               <div className="text-white/80 text-sm mt-4">
-                <p>Severní 1656/33</p>
-                <p>408 01 Rumburk 1</p>
-                <p className="mt-2">IČO: 87761815</p>
+                <p>Adresa sídla</p>
+                <p>PSČ Město</p>
+                <p className="mt-2">IČO: XXXXXXXX</p>
               </div>
             </div>
           </div>
@@ -61,7 +61,7 @@ const Footer = () => {
 
         <div className="border-t border-white/20 mt-8 pt-8 text-center">
           <p className="text-white/60 text-sm">
-            © 2024 Instalace Diessner. Všechna práva vyhrazena.
+            © 2024 Filpastav s.r.o. Všechna práva vyhrazena.
           </p>
         </div>
       </div>

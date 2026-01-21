@@ -9,15 +9,15 @@ const AboutSection = () => {
               O nás
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Instalace Diessner je rodinná firma s dlouholetou tradicí v oblasti 
-              instalatérských služeb. Specializujeme se na komplexní řešení pro 
-              topenářství, vodoinstalace, elektroinstalace a stavební práce.
+              Filpastav s.r.o. je spolehlivá stavební firma poskytující komplexní 
+              služby v oblasti stavebnictví a autodopravy. Specializujeme se na 
+              veškeré stavební práce od základů až po finální úpravy.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Naším cílem je poskytovat kvalitní služby s důrazem na spolehlivost, 
               profesionalitu a spokojenost našich zákazníků. Díky našim zkušenostem 
-              a moderním technologiím dokážeme realizovat projekty od rodinných domů 
-              až po větší komerční objekty.
+              a modernímu vybavení dokážeme realizovat projekty od rodinných domů 
+              až po větší komerční objekty včetně zajištění dopravy materiálů.
             </p>
             
             {/* Přednosti */}
