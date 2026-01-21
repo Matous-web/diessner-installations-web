@@ -52,10 +52,10 @@ const ContactSection = () => {
             <Card className="p-6 shadow-card border-border bg-card">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
-                  <span className="text-primary-foreground font-barlow font-bold text-lg">ID</span>
+                  <span className="text-primary-foreground font-barlow font-bold text-lg">F</span>
                 </div>
                 <h3 className="text-xl font-barlow font-semibold text-foreground">
-                  Instalace Diessner
+                  Filpastav s.r.o.
                 </h3>
               </div>
               
@@ -64,7 +64,7 @@ const ContactSection = () => {
                   <MapPin className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-medium text-foreground">Adresa kanceláře:</p>
-                    <p className="text-muted-foreground">Rumburk - Rumburk 1<br />Severní 1656/33<br />40801</p>
+                    <p className="text-muted-foreground">Sídlo společnosti</p>
                   </div>
                 </div>
                 
@@ -72,8 +72,8 @@ const ContactSection = () => {
                   <Phone className="w-5 h-5 text-primary flex-shrink-0" />
                   <div>
                     <p className="font-medium text-foreground">Telefon:</p>
-                    <a href="tel:+420123456789" className="text-primary hover:text-primary/80">
-                      +420 123 456 789
+                    <a href="tel:+420XXXXXXXXX" className="text-primary hover:text-primary/80">
+                      +420 XXX XXX XXX
                     </a>
                   </div>
                 </div>
@@ -82,8 +82,8 @@ const ContactSection = () => {
                   <Mail className="w-5 h-5 text-primary flex-shrink-0" />
                   <div>
                     <p className="font-medium text-foreground">Email:</p>
-                    <a href="mailto:info@instalacediessner.cz" className="text-primary hover:text-primary/80">
-                      info@instalacediessner.cz
+                    <a href="mailto:info@filpastav.cz" className="text-primary hover:text-primary/80">
+                      info@filpastav.cz
                     </a>
                   </div>
                 </div>
@@ -92,8 +92,8 @@ const ContactSection = () => {
                   <Globe className="w-5 h-5 text-primary flex-shrink-0" />
                   <div>
                     <p className="font-medium text-foreground">Web:</p>
-                    <a href="https://instalacediessner.cz" className="text-primary hover:text-primary/80">
-                      www.instalacediessner.cz
+                    <a href="https://filpastav.cz" className="text-primary hover:text-primary/80">
+                      www.filpastav.cz
                     </a>
                   </div>
                 </div>
@@ -121,18 +121,18 @@ const ContactSection = () => {
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">IČO:</span>
-                  <span className="text-foreground">87761815</span>
+                  <span className="text-foreground">XXXXXXXX</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">DIČ:</span>
-                  <span className="text-foreground">CZ87761815</span>
+                  <span className="text-foreground">CZXXXXXXXX</span>
                 </div>
                 <div className="mt-4 pt-4 border-t border-border">
                   <p className="text-muted-foreground font-medium mb-2">Fakturační adresa:</p>
                   <p className="text-foreground text-sm">
-                    Instalace Diessner<br />
-                    Severní 1656/33<br />
-                    408 01 Rumburk 1
+                    Filpastav s.r.o.<br />
+                    Adresa sídla<br />
+                    PSČ Město
                   </p>
                 </div>
               </div>
@@ -218,7 +218,7 @@ const ContactSection = () => {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Mapa - Instalace Diessner"
+                  title="Mapa - Filpastav s.r.o."
                 ></iframe>
               </div>
             </Card>

@@ -24,11 +24,11 @@ const HeroSection = () => {
       <div className="relative z-10 text-center text-white px-4">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-barlow font-bold mb-6 tracking-tight">
-            Instalace Diessner
+            Filpastav s.r.o.
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-white/90 font-light max-w-2xl mx-auto leading-relaxed">
-            Profesionální instalatérské služby pro váš domov i firmu. 
-            Kvalita, spolehlivost a dlouholeté zkušenosti.
+            Profesionální stavební práce a autodoprava. 
+            Kvalita, spolehlivost a individuální přístup ke každému projektu.
           </p>
           <Button 
             onClick={scrollToContact}

@@ -4,28 +4,28 @@ import { Flame, Droplets, Zap, Hammer } from 'lucide-react';
 const ServicesSection = () => {
   const services = [
     {
+      icon: <Hammer className="w-12 h-12 text-primary" />,
+      title: "Stavební práce",
+      description: "Kompletní stavební práce včetně novostaveb, rekonstrukcí, přístaveb a nástaveb. Zajišťujeme veškeré zednické práce od základů až po střechu.",
+      image: "/lovable-uploads/f038752b-0283-423b-96ee-d7239212e406.png"
+    },
+    {
       icon: <Flame className="w-12 h-12 text-primary" />,
-      title: "Topenářství",
-      description: "Instalace a servis topných systémů, kotlů, radiátorů a podlahového vytápění. Zajišťujeme kompletní řešení pro efektivní vytápění vašeho domova.",
+      title: "Zemní práce", 
+      description: "Výkopové práce, terénní úpravy, příprava staveniště a základů. Disponujeme moderní technikou pro efektivní realizaci zemních prací.",
       image: "/lovable-uploads/e677a4f2-b0d4-4f02-927d-bad036a8b5e4.png"
     },
     {
       icon: <Droplets className="w-12 h-12 text-primary" />,
-      title: "Vodoinstalatérství", 
-      description: "Kompletní vodovodní a kanalizační systémy, opravy a údržba. Od jednoduchých oprav až po kompletní rekonstrukce koupelen a kuchyní.",
+      title: "Obklady a dlažby",
+      description: "Profesionální pokládka obkladů a dlažeb v interiéru i exteriéru. Precizní práce s důrazem na kvalitu a estetiku.",
       image: "/lovable-uploads/a1571046-dd4b-4fed-ae08-e8a67c14bcaa.png"
     },
     {
       icon: <Zap className="w-12 h-12 text-primary" />,
-      title: "Elektroinstalace",
-      description: "Elektrické instalace, revize a opravy. Zajišťujeme bezpečné a spolehlivé elektrické systémy podle nejnovějších norem a předpisů.",
+      title: "Autodoprava",
+      description: "Přeprava stavebního materiálu, suti a zeminy. Zajišťujeme spolehlivou dopravu pro vaše stavební projekty v celém regionu.",
       image: "/lovable-uploads/44a16051-e222-48e4-9a3d-b1e2df4f9be8.png"
-    },
-    {
-      icon: <Hammer className="w-12 h-12 text-primary" />,
-      title: "Stavební práce",
-      description: "Rekonstrukce, zděné práce, obklady a dlažby. Komplexní stavební služby pro váš domov od základů až po finální úpravy.",
-      image: "/lovable-uploads/f038752b-0283-423b-96ee-d7239212e406.png"
     }
   ];
 

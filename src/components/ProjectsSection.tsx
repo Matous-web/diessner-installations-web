@@ -4,8 +4,8 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "Rekonstrukce rodinného domu",
-      description: "Kompletní rekonstrukce topení, vody a elektroinstalace v rodinném domě v Rumburku. Projekt zahrnoval výměnu kotlů, instalaci podlahového vytápění a modernizaci elektrorozvodů.",
+      title: "Novostavba rodinného domu",
+      description: "Kompletní realizace novostavby rodinného domu na klíč. Projekt zahrnoval zemní práce, základy, hrubou stavbu, střechu a veškeré dokončovací práce.",
       images: [
         "/lovable-uploads/e677a4f2-b0d4-4f02-927d-bad036a8b5e4.png",
         "/lovable-uploads/a1571046-dd4b-4fed-ae08-e8a67c14bcaa.png",
@@ -13,8 +13,8 @@ const ProjectsSection = () => {
       ]
     },
     {
-      title: "Instalace tepelného čerpadla",
-      description: "Moderní řešení vytápění pomocí tepelného čerpadla včetně kompletní instalace a nastavení regulace. Ekologické a ekonomické řešení pro nízkoenergetický dům.",
+      title: "Rekonstrukce bytového domu",
+      description: "Celková rekonstrukce bytového domu včetně zateplení fasády, výměny oken a kompletní rekonstrukce společných prostor. Projekt realizován v krátkém termínu.",
       images: [
         "/lovable-uploads/a1571046-dd4b-4fed-ae08-e8a67c14bcaa.png",
         "/lovable-uploads/e677a4f2-b0d4-4f02-927d-bad036a8b5e4.png",
@@ -22,8 +22,8 @@ const ProjectsSection = () => {
       ]
     },
     {
-      title: "Rekonstrukce koupelny",
-      description: "Komplexní rekonstrukce koupelny včetně nových rozvodů vody, kanalizace a elektřiny. Moderní design s důrazem na funkčnost a estetiku.",
+      title: "Přístavba a modernizace",
+      description: "Přístavba garáže a modernizace stávajícího objektu. Součástí projektu byly i terénní úpravy a pokládka zámkové dlažby na příjezdové cestě.",
       images: [
         "/lovable-uploads/046ec4d0-0d58-46d4-b58c-a4a1b1931159.png",
         "/lovable-uploads/f038752b-0283-423b-96ee-d7239212e406.png",
