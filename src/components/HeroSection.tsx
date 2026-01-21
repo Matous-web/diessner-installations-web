@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import heroImage from '@/assets/hero-construction.jpg';
 
 const HeroSection = () => {
   const scrollToContact = () => {
@@ -14,7 +15,7 @@ const HeroSection = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('/lovable-uploads/e677a4f2-b0d4-4f02-927d-bad036a8b5e4.png')`
+          backgroundImage: `url('${heroImage}')`
         }}
       >
         <div className="absolute inset-0 bg-gradient-hero"></div>

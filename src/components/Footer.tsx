@@ -40,19 +40,19 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-white/60" />
-                <a href="tel:+420XXXXXXXXX" className="text-white/80 hover:text-white transition-colors">
-                  +420 XXX XXX XXX
+                <a href="tel:+420723385545" className="text-white/80 hover:text-white transition-colors">
+                  +420 723 385 545
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-white/60" />
-                <a href="mailto:info@filpastav.cz" className="text-white/80 hover:text-white transition-colors">
-                  info@filpastav.cz
+                <a href="mailto:petr.hrubant@seznam.cz" className="text-white/80 hover:text-white transition-colors">
+                  petr.hrubant@seznam.cz
                 </a>
               </div>
               <div className="text-white/80 text-sm mt-4">
-                <p>Adresa sídla</p>
-                <p>PSČ Město</p>
+                <p>Okrouhlo 229</p>
+                <p>254 01</p>
                 <p className="mt-2">IČO: XXXXXXXX</p>
               </div>
             </div>

@@ -1,5 +1,9 @@
 import { Card } from '@/components/ui/card';
-import { Flame, Droplets, Zap, Hammer } from 'lucide-react';
+import { Hammer, Shovel, Grid3X3, Truck } from 'lucide-react';
+import serviceConstruction from '@/assets/service-construction.jpg';
+import serviceEarthwork from '@/assets/service-earthwork.jpg';
+import serviceTiles from '@/assets/service-tiles.jpg';
+import serviceTransport from '@/assets/service-transport.jpg';
 
 const ServicesSection = () => {
   const services = [
@@ -7,25 +11,25 @@ const ServicesSection = () => {
       icon: <Hammer className="w-12 h-12 text-primary" />,
       title: "Stavební práce",
       description: "Kompletní stavební práce včetně novostaveb, rekonstrukcí, přístaveb a nástaveb. Zajišťujeme veškeré zednické práce od základů až po střechu.",
-      image: "/lovable-uploads/f038752b-0283-423b-96ee-d7239212e406.png"
+      image: serviceConstruction
     },
     {
-      icon: <Flame className="w-12 h-12 text-primary" />,
+      icon: <Shovel className="w-12 h-12 text-primary" />,
       title: "Zemní práce", 
       description: "Výkopové práce, terénní úpravy, příprava staveniště a základů. Disponujeme moderní technikou pro efektivní realizaci zemních prací.",
-      image: "/lovable-uploads/e677a4f2-b0d4-4f02-927d-bad036a8b5e4.png"
+      image: serviceEarthwork
     },
     {
-      icon: <Droplets className="w-12 h-12 text-primary" />,
+      icon: <Grid3X3 className="w-12 h-12 text-primary" />,
       title: "Obklady a dlažby",
       description: "Profesionální pokládka obkladů a dlažeb v interiéru i exteriéru. Precizní práce s důrazem na kvalitu a estetiku.",
-      image: "/lovable-uploads/a1571046-dd4b-4fed-ae08-e8a67c14bcaa.png"
+      image: serviceTiles
     },
     {
-      icon: <Zap className="w-12 h-12 text-primary" />,
+      icon: <Truck className="w-12 h-12 text-primary" />,
       title: "Autodoprava",
       description: "Přeprava stavebního materiálu, suti a zeminy. Zajišťujeme spolehlivou dopravu pro vaše stavební projekty v celém regionu.",
-      image: "/lovable-uploads/44a16051-e222-48e4-9a3d-b1e2df4f9be8.png"
+      image: serviceTransport
     }
   ];
 
@@ -37,7 +41,7 @@ const ServicesSection = () => {
             Naše služby
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Poskytujeme komplexní instalatérské služby s důrazem na kvalitu a spolehlivost. 
+            Poskytujeme komplexní stavební služby s důrazem na kvalitu a spolehlivost. 
             Každý projekt řešíme individuálně podle potřeb našich zákazníků.
           </p>
         </div>

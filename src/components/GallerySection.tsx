@@ -1,11 +1,30 @@
+import heroConstruction from '@/assets/hero-construction.jpg';
+import serviceConstruction from '@/assets/service-construction.jpg';
+import serviceEarthwork from '@/assets/service-earthwork.jpg';
+import serviceTiles from '@/assets/service-tiles.jpg';
+import serviceTransport from '@/assets/service-transport.jpg';
+import aboutConstruction from '@/assets/about-construction.jpg';
+import projectRenovation from '@/assets/project-renovation.jpg';
+import projectGarage from '@/assets/project-garage.jpg';
+import galleryPaving from '@/assets/gallery-paving.jpg';
+import galleryPlastering from '@/assets/gallery-plastering.jpg';
+import galleryFoundation from '@/assets/gallery-foundation.jpg';
+import galleryRoof from '@/assets/gallery-roof.jpg';
+
 const GallerySection = () => {
   const galleryImages = [
-    "/lovable-uploads/e677a4f2-b0d4-4f02-927d-bad036a8b5e4.png",
-    "/lovable-uploads/a1571046-dd4b-4fed-ae08-e8a67c14bcaa.png", 
-    "/lovable-uploads/046ec4d0-0d58-46d4-b58c-a4a1b1931159.png",
-    "/lovable-uploads/44a16051-e222-48e4-9a3d-b1e2df4f9be8.png",
-    "/lovable-uploads/1b4a0d72-d3f8-4066-95e5-a70dad06e89a.png",
-    "/lovable-uploads/f038752b-0283-423b-96ee-d7239212e406.png"
+    heroConstruction,
+    serviceConstruction,
+    serviceEarthwork,
+    serviceTiles,
+    serviceTransport,
+    aboutConstruction,
+    projectRenovation,
+    projectGarage,
+    galleryPaving,
+    galleryPlastering,
+    galleryFoundation,
+    galleryRoof
   ];
 
   return (
@@ -21,7 +40,7 @@ const GallerySection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {galleryImages.map((image, index) => (
             <div 
               key={index} 

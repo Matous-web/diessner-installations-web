@@ -1,5 +1,11 @@
 import { Card } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import heroConstruction from '@/assets/hero-construction.jpg';
+import serviceConstruction from '@/assets/service-construction.jpg';
+import projectRenovation from '@/assets/project-renovation.jpg';
+import projectGarage from '@/assets/project-garage.jpg';
+import aboutConstruction from '@/assets/about-construction.jpg';
+import galleryPaving from '@/assets/gallery-paving.jpg';
 
 const ProjectsSection = () => {
   const projects = [
@@ -7,27 +13,27 @@ const ProjectsSection = () => {
       title: "Novostavba rodinného domu",
       description: "Kompletní realizace novostavby rodinného domu na klíč. Projekt zahrnoval zemní práce, základy, hrubou stavbu, střechu a veškeré dokončovací práce.",
       images: [
-        "/lovable-uploads/e677a4f2-b0d4-4f02-927d-bad036a8b5e4.png",
-        "/lovable-uploads/a1571046-dd4b-4fed-ae08-e8a67c14bcaa.png",
-        "/lovable-uploads/44a16051-e222-48e4-9a3d-b1e2df4f9be8.png"
+        heroConstruction,
+        serviceConstruction,
+        aboutConstruction
       ]
     },
     {
       title: "Rekonstrukce bytového domu",
       description: "Celková rekonstrukce bytového domu včetně zateplení fasády, výměny oken a kompletní rekonstrukce společných prostor. Projekt realizován v krátkém termínu.",
       images: [
-        "/lovable-uploads/a1571046-dd4b-4fed-ae08-e8a67c14bcaa.png",
-        "/lovable-uploads/e677a4f2-b0d4-4f02-927d-bad036a8b5e4.png",
-        "/lovable-uploads/1b4a0d72-d3f8-4066-95e5-a70dad06e89a.png"
+        projectRenovation,
+        heroConstruction,
+        serviceConstruction
       ]
     },
     {
       title: "Přístavba a modernizace",
       description: "Přístavba garáže a modernizace stávajícího objektu. Součástí projektu byly i terénní úpravy a pokládka zámkové dlažby na příjezdové cestě.",
       images: [
-        "/lovable-uploads/046ec4d0-0d58-46d4-b58c-a4a1b1931159.png",
-        "/lovable-uploads/f038752b-0283-423b-96ee-d7239212e406.png",
-        "/lovable-uploads/44a16051-e222-48e4-9a3d-b1e2df4f9be8.png"
+        projectGarage,
+        galleryPaving,
+        aboutConstruction
       ]
     }
   ];
