@@ -121,11 +121,11 @@ const ContactSection = () => {
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">IČO:</span>
-                  <span className="text-foreground">XXXXXXXX</span>
+                  <span className="text-foreground">19620586</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">DIČ:</span>
-                  <span className="text-foreground">CZXXXXXXXX</span>
+                  <span className="text-foreground">CZ19620586</span>
                 </div>
                 <div className="mt-4 pt-4 border-t border-border">
                   <p className="text-muted-foreground font-medium mb-2">Fakturační adresa:</p>
@@ -211,7 +211,7 @@ const ContactSection = () => {
             <Card className="overflow-hidden shadow-card border-border">
               <div className="h-64 bg-muted">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.123456789!2d14.556567!3d50.898123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470978d123456789%3A0x123456789abcdef!2sSevern%C3%AD%201656%2F33%2C%20408%2001%20Rumburk!5e0!3m2!1sen!2scz!4v1234567890123"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.5!2d14.4167!3d49.9833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b8e8b8b8b8b8b%3A0x8b8b8b8b8b8b8b8b!2sOkrouhlo%20229%2C%20254%2001!5e0!3m2!1scs!2scz!4v1700000000000"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
