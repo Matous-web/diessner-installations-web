@@ -53,7 +53,7 @@ const Footer = () => {
               <div className="text-white/80 text-sm mt-4">
                 <p>Okrouhlo 229</p>
                 <p>254 01</p>
-                <p className="mt-2">IČO: XXXXXXXX</p>
+                <p className="mt-2">IČO: 19620586</p>
               </div>
             </div>
           </div>
