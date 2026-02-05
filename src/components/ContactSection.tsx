@@ -15,15 +15,53 @@ const ContactSection = () => {
     phone: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend
-    toast({
-      title: "Zpráva odeslána",
-      description: "Děkujeme za vaši zprávu. Ozveme se vám co nejdříve.",
-    });
-    setFormData({ name: '', email: '', phone: '', message: '' });
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: 'b8eb690e-333c-47bb-9294-9436b5c03449',
+          name: formData.name.trim(),
+          email: formData.email.trim(),
+          phone: formData.phone.trim() || 'Neuvedeno',
+          message: formData.message.trim(),
+          subject: 'Nová zpráva z webu Filpastav',
+          from_name: 'Filpastav Kontaktní Formulář',
+        }),
+      });
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        toast({
+          title: "Zpráva odeslána",
+          description: "Děkujeme za vaši zprávu. Ozveme se vám co nejdříve.",
+        });
+        setFormData({ name: '', email: '', phone: '', message: '' });
+      } else {
+        toast({
+          title: "Chyba při odesílání",
+          description: "Zprávu se nepodařilo odeslat. Zkuste to prosím znovu.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Chyba připojení",
+        description: "Nepodařilo se připojit k serveru. Zkontrolujte připojení k internetu.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -200,9 +238,10 @@ const ContactSection = () => {
                 
                 <Button 
                   type="submit" 
-                  className="w-full bg-gradient-primary hover:bg-installer-blue-dark shadow-button"
+                  disabled={isSubmitting}
+                  className="w-full bg-gradient-primary hover:bg-installer-blue-dark shadow-button disabled:opacity-50"
                 >
-                  Odeslat zprávu
+                  {isSubmitting ? 'Odesílám...' : 'Odeslat zprávu'}
                 </Button>
               </form>
             </Card>
