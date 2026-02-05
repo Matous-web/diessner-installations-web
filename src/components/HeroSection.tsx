@@ -1,48 +1,36 @@
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-construction.jpg';
-
 const HeroSection = () => {
   const scrollToContact = () => {
     const element = document.getElementById('contact');
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
-  return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url('${heroImage}')`
-        }}
-      >
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: `url('${heroImage}')`
+    }}>
         <div className="absolute inset-0 bg-gradient-hero"></div>
       </div>
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-barlow font-bold mb-6 tracking-tight">
-            Filpastav s.r.o.
-          </h1>
+          <h1 className="text-5xl md:text-7xl font-barlow font-bold mb-6 tracking-tight">Filpastav s.r.o</h1>
           <p className="text-xl md:text-2xl mb-8 text-white/90 font-light max-w-2xl mx-auto leading-relaxed">
             Profesionální stavební práce a autodoprava. 
             Kvalita, spolehlivost a individuální přístup ke každému projektu.
           </p>
-          <Button 
-            onClick={scrollToContact}
-            size="lg" 
-            className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6 shadow-button transition-all duration-300 transform hover:scale-105"
-          >
+          <Button onClick={scrollToContact} size="lg" className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6 shadow-button transition-all duration-300 transform hover:scale-105">
             Domluvit schůzku
           </Button>
         </div>
       </div>
 
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
